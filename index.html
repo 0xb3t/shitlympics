@@ -1,0 +1,76 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title></title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/home.css" rel="stylesheet">
+  <meta content="" name="description">
+
+  <meta content="shitlympics" property="og:title">
+  <meta content="website" property="og:type">
+  <meta content="www.shitlympics.fun" property="og:url">
+  <meta content="www.shitlympics.fun/img/mascot.webp" property="og:image">
+  <meta content="mascot" property="og:image:alt">
+
+  <link href="/favicon.ico" rel="icon" sizes="any">
+
+  <link href="site.webmanifest" rel="manifest">
+  <meta content="#fafafa" name="theme-color">
+</head>
+
+<body>
+<nav class="navbar">
+  <div class="navbar-container">
+    <ul class="nav-links">
+      <li><a href="#buy">Buy</a></li>
+      <li><a href="#chart">Chart</a></li>
+      <li><a href="#dexscreener">Dexscreener</a></li>
+    </ul>
+    <ul class="nav-links">
+      <li><a href="#x">X</a></li>
+      <li><a href="#telegram">Telegram</a></li>
+    </ul>
+  </div>
+
+</nav>
+<div class="carousel">
+  <div class="carousel-item active" style="background-image: url('img/carousel/1.webp');"></div>
+  <div class="carousel-item" style="background-image: url('img/carousel/2.webp');"></div>
+  <div class="carousel-item" style="background-image: url('img/carousel/3.webp');"></div>
+  <div class="carousel-item" style="background-image: url('img/carousel/4.webp');"></div>
+  <div class="carousel-item" style="background-image: url('img/carousel/5.webp');"></div>
+  <div class="carousel-item" style="background-image: url('img/carousel/6.webp');"></div>
+  <div class="carousel-item" style="background-image: url('img/carousel/7.webp');"></div>
+  <div class="carousel-item" style="background-image: url('img/carousel/8.webp');"></div>
+  <div class="carousel-item" style="background-image: url('img/carousel/9.webp');"></div>
+  <div class="carousel-item" style="background-image: url('img/carousel/10.webp');"></div>
+  <div class="carousel-item" style="background-image: url('img/carousel/11.webp');"></div>
+  <div class="carousel-item" style="background-image: url('img/carousel/12.webp');"></div>
+  <div class="carousel-item" style="background-image: url('img/carousel/13.webp');"></div>
+</div>
+
+
+<script>
+  let currentIndex = 0;
+  const items = document.querySelectorAll('.carousel-item');
+  const intervalTime = 3000; // 3 seconds
+
+  function moveSlide(direction) {
+    items[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + direction + items.length) % items.length;
+    items[currentIndex].classList.add('active');
+  }
+
+  function autoScroll() {
+    moveSlide(1);
+  }
+
+  setInterval(autoScroll, intervalTime);
+
+</script>
+</body>
+
+</html>
