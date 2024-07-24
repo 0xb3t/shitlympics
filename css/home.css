@@ -96,3 +96,19 @@ ul {
 .next {
   right: 20px;
 }
+
+h1 {
+  color: white;
+  font-size: 34px;
+  text-align: center;
+  text-shadow: black 1px 1px 2px;
+
+}
+
+footer {
+  padding: 20px;
+  text-shadow: black 1px 1px 2px;
+  font-size: 16px;
+  text-align: center;
+  color: white
+}
